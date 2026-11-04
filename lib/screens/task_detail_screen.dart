@@ -33,7 +33,10 @@ class _TaskDetailScreenState extends State<TaskDetailScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Échéance')),
+      appBar: AppBar(
+        title: const Text('Échéance'),
+        centerTitle: true,
+      ),
       body: TaskDetailView(
         task: _task,
         onMarkCompleted: _task.isCompleted ? null : _markCompleted,
