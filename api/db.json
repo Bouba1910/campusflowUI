@@ -1,0 +1,53 @@
+{
+  "taches": [
+    {
+      "id": 1,
+      "title": "Rendre le TP Flutter",
+      "description": "Finaliser les écrans et vérifier la navigation.",
+      "isCompleted": false,
+      "dueDate": "2026-11-20T09:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Réviser les widgets",
+      "description": "Revoir les widgets de mise en page pour le contrôle.",
+      "isCompleted": false,
+      "dueDate": "2026-11-06T18:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "Préparer la démonstration",
+      "description": "Préparer les étapes de démonstration sur tablette.",
+      "isCompleted": false,
+      "dueDate": "2026-11-24T14:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "Rendre le compte rendu",
+      "description": "Le compte rendu du projet a été déposé.",
+      "isCompleted": true,
+      "dueDate": "2026-11-04T17:00:00.000Z"
+    }
+  ],
+  "cours": [
+    {
+      "id": 1,
+      "name": "Développement mobile",
+      "code": "MOB301",
+      "teacher": "Mme Durand"
+    },
+    {
+      "id": 2,
+      "name": "Bases de données",
+      "code": "BD201",
+      "teacher": "M. Lefèvre"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "etudiant@campusflow.fr",
+      "password": "campusflow2026"
+    }
+  ]
+}
