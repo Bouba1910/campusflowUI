@@ -1,29 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'screens/home_screen.dart';
+import 'app.dart';
+import 'core/secure_token_storage.dart';
+import 'state/providers.dart';
 
-void main() {
-  runApp(const CampusFlowApp());
-}
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final storage = SecureTokenStorage();
+  final token = await storage.readToken();
 
-class CampusFlowApp extends StatelessWidget {
-  const CampusFlowApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'CampusFlow',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF3D5A73)),
-        useMaterial3: true,
-        appBarTheme: const AppBarTheme(
-          centerTitle: false,
-          elevation: 0,
-          scrolledUnderElevation: 0,
-        ),
-      ),
-      home: const HomeScreen(),
-    );
-  }
+  runApp(
+    ProviderScope(
+      overrides: [
+        secureTokenStorageProvider.overrideWithValue(storage),
+        tokenProvider.overrideWith(() => TokenNotifier(token)),
+      ],
+      child: const CampusFlowApp(),
+    ),
+  );
 }
