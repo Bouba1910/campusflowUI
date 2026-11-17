@@ -1,12 +1,13 @@
 Nom : COMPAORE Aboubacar Sidiki
 Filiere / Niveau : MSI / M1
-# CampusFlow – application Flutter
+# CampusFlow – TP Programmation Mobile
 
-Application Flutter de gestion d'échéances : liste, détail, ajout et marquage comme fait. Sur tablette, la liste et le détail s'affichent côte à côte.
+Projet unique des séances 1 à 7 : décision de plateforme, conception, modèles Dart, application Flutter, navigation et état partagé, puis API locale avec authentification.
 
 ## Prérequis
 
 - Flutter 3.44 ou plus récent
+- Node.js et json-server pour l'API locale (`npm install -g json-server`)
 
 ## Commandes
 
@@ -14,13 +15,20 @@ Application Flutter de gestion d'échéances : liste, détail, ajout et marquage
 flutter pub get
 flutter run
 flutter test
-flutter analyze
+cd packages/campusflow_models && dart test
+json-server --watch api/db.json --port 3000
 ```
+
+Sur l'émulateur Android, l'API locale est appelée via `10.0.2.2:3000`.
 
 ## Structure
 
-- `lib/models/` : modèle `Task`
-- `lib/data/` : données de départ
-- `lib/screens/` : écrans liste, détail et formulaire
-- `lib/utils/` : formatage des dates
+- `docs/` : livrables des séances 1 et 2 (fiche, autopsie, persona, parcours, wireframes, design system)
+- `packages/campusflow_models/` : modèles Dart et tests de la séance 3
+- `api/db.json` : données de json-server
+- `lib/core/` : routeur, client Dio et stockage sécurisé du jeton
+- `lib/data/` : contrat `TaskRepository`, implémentation API et implémentation fictive
+- `lib/state/` : Riverpod, filtres et authentification
+- `lib/screens/` : écrans Connexion, Tâches, Détail, Formulaire, Cours et Profil
+- `lib/widgets/` : coque de navigation et détail d'une tâche
 - `test/` : tests de l'interface
