@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640">
+  <rect x="0" y="0" width="360" height="640" fill="#FFFFFF"/>
+  <text x="16" y="36" font-family="sans-serif" font-size="20" fill="#3D5A73">CampusFlow</text>
+  <line x1="0" y1="56" x2="360" y2="56" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="16" y="96" font-family="sans-serif" font-size="18" fill="#37474F">Tâches</text>
+  <text x="16" y="132" font-family="sans-serif" font-size="14" fill="#3D5A73">Aujourd'hui</text>
+  <rect x="16" y="144" width="328" height="64" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="28" y="172" font-family="sans-serif" font-size="15" fill="#37474F">Rapport de gestion</text>
+  <text x="28" y="194" font-family="sans-serif" font-size="13" fill="#607D8B">À rendre le 12 novembre</text>
+  <text x="16" y="244" font-family="sans-serif" font-size="14" fill="#3D5A73">Cette semaine</text>
+  <rect x="16" y="256" width="328" height="64" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="28" y="284" font-family="sans-serif" font-size="15" fill="#37474F">Exercices de comptabilité</text>
+  <text x="28" y="306" font-family="sans-serif" font-size="13" fill="#607D8B">À rendre le 15 novembre</text>
+  <rect x="16" y="328" width="328" height="64" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="28" y="356" font-family="sans-serif" font-size="15" fill="#37474F">Présentation de groupe</text>
+  <text x="28" y="378" font-family="sans-serif" font-size="13" fill="#607D8B">À rendre le 18 novembre</text>
+  <text x="16" y="428" font-family="sans-serif" font-size="14" fill="#3D5A73">Plus tard</text>
+  <rect x="16" y="440" width="328" height="64" fill="#FFFFFF" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="28" y="468" font-family="sans-serif" font-size="15" fill="#37474F">Révision d'anglais</text>
+  <text x="28" y="490" font-family="sans-serif" font-size="13" fill="#607D8B">À rendre le 20 novembre</text>
+  <rect x="296" y="508" width="48" height="48" fill="#3D5A73"/>
+  <text x="311" y="540" font-family="sans-serif" font-size="28" fill="#FFFFFF">+</text>
+  <line x1="0" y1="584" x2="360" y2="584" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="52" y="616" font-family="sans-serif" font-size="13" fill="#3D5A73">À faire</text>
+  <text x="232" y="616" font-family="sans-serif" font-size="13" fill="#607D8B">Terminées</text>
+</svg>
