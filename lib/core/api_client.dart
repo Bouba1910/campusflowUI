@@ -1,8 +1,16 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
+
+String defaultApiBaseUrl() {
+  if (kIsWeb || defaultTargetPlatform != TargetPlatform.android) {
+    return 'http://localhost:3000';
+  }
+  return 'http://10.0.2.2:3000';
+}
 
 class ApiClient {
-  ApiClient({String baseUrl = 'http://10.0.2.2:3000'})
-    : dio = Dio(BaseOptions(baseUrl: baseUrl)) {
+  ApiClient({String? baseUrl})
+    : dio = Dio(BaseOptions(baseUrl: baseUrl ?? defaultApiBaseUrl())) {
     dio.interceptors.add(
       InterceptorsWrapper(
         onRequest: (options, handler) {
