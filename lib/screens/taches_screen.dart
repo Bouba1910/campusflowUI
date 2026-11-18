@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../state/filters.dart';
-import '../state/tasks_notifier.dart';
+import '../state/taches_notifier.dart';
 import '../utils/date_format.dart';
 import '../widgets/tache_detail_body.dart';
 

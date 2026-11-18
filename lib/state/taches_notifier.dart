@@ -3,11 +3,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'providers.dart';
 
-final tasksProvider = AsyncNotifierProvider<TasksNotifier, List<Task>>(
-  TasksNotifier.new,
+final tasksProvider = AsyncNotifierProvider<TachesNotifier, List<Task>>(
+  TachesNotifier.new,
 );
 
-class TasksNotifier extends AsyncNotifier<List<Task>> {
+class TachesNotifier extends AsyncNotifier<List<Task>> {
   @override
   Future<List<Task>> build() {
     return ref.read(taskRepositoryProvider).fetchTasks();

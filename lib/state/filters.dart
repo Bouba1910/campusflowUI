@@ -1,7 +1,7 @@
 import 'package:campusflow_models/models/task.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'tasks_notifier.dart';
+import 'taches_notifier.dart';
 
 enum TaskFilter { aFaire, faites, enRetard }
 
