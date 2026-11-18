@@ -10,7 +10,7 @@
 | Texte secondaire | `#607D8B` | Sous-titres, dates, états « terminée ». |
 | Trait | `#CFD8DC` | Séparateurs et bordures des champs. |
 
-Le thème Material 3 est généré à partir de la couleur primaire `#3D5A73` dans `lib/main.dart`. Le texte gris foncé sur surface claire assure un contraste supérieur à 4,5:1, conforme au minimum exigé pour le texte courant.
+Le thème Material 3 est généré à partir de la couleur primaire `#3D5A73` dans `lib/app.dart`. Le texte gris foncé sur surface claire assure un contraste supérieur à 4,5:1, conforme au minimum exigé pour le texte courant.
 
 ## Typographie
 
@@ -33,7 +33,7 @@ Typographie Material par défaut (famille Roboto selon la plateforme, via `Theme
 ## Tailles de fenêtre visées
 
 - Smartphone : 360 dp de large, référence des wireframes 360 × 640.
-- Tablette : 840 dp de large, seuil de bascule du mode deux panneaux dans `lib/screens/home_screen.dart` ; wireframe de référence 900 × 640.
+- Tablette : 840 dp de large, seuil de bascule du mode deux panneaux dans `lib/screens/taches_screen.dart` ; wireframe de référence 900 × 640.
 - En dessous de 840 dp, une seule colonne avec navigation basse ; au-dessus, liste à gauche et détail à droite.
 
 ## Contraste

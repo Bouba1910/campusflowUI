@@ -18,4 +18,4 @@ Contrairement à Android, Windows Phone n'était présent que sur un nombre limi
 
 Les changements de direction, le passage de Windows Phone à Windows 10 Mobile puis l'abandon du support en 2017 ont réduit la confiance des utilisateurs et des partenaires. Sans perspective de long terme, les investissements se sont arrêtés.
 
-Source : annonce Microsoft, 2017.
+Source : Dona Sarkar, « Announcing Windows 10 Insider Preview Build 16176 for PC + Build 15204 for Mobile », Windows Insider Blog, 14 avril 2017. https://blogs.windows.com/windows-insider/2017/04/14/announcing-windows-10-insider-preview-build-16176-pc-build-15204-mobile/
